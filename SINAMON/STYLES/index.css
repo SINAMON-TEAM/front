@@ -1,0 +1,57 @@
+.index-body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.title{
+  text-align: center;
+  margin-top: 15vh;
+  margin-bottom: 10vh;
+}
+.title h1{
+  font-size: 3em;
+  font-weight: 700;
+}
+
+.sub-title-area{
+  height: 20vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.sub-title{
+  transform: rotate(347deg);
+}
+.sub-title b{
+  animation: color_change infinite ease 1.5s;
+}
+.kakao-login-btn{
+  width: 300px;
+  height: 50px;
+  border-radius: 10px;
+  font-weight: 600;
+  font-size: 1rem;
+  border-color: yellow;
+  background-color: yellow;
+}
+
+@keyframes color_change {
+  0% {
+    font-weight: 100;
+    color: white;
+  }
+  50% {
+    font-weight: 500;
+    color: plum;
+  }
+  100% {
+    font-weight: 900;
+    color: red;
+  }
+  
+}

@@ -1,0 +1,55 @@
+/* 모바일 */
+@media (max-width:480px) {
+  .additional-info-area{
+    width: 70vw;
+  }
+}
+/* 모바일 외 기기 */
+@media (min-width:481px) {
+  .additional-info-area{
+    width: 500px;
+  }
+}
+
+.logo{
+  font-size: var(--logo-size);
+  font-weight: var(--logo-font-weight);
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.login-logo-area h2{
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 25px;
+  font-weight: 500;
+}
+
+.login-area{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.additional-info-area{
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: white;
+  /* display: none; */
+  z-index: 1;
+}
+
+.black-bg{
+  background-color: black;
+  opacity: 0.8;
+}

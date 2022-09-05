@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>메인</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="main-body">
+  <header class="main-header">
+    <div class="logo-area"><h1>시나몬</h1></div>
+    <div class="my-page-btn-area">
+      <button>마이페이지 버튼 들어갈 곳</button>
+    </div>
+  </header>
+  <main class="main-main">
+    <div class="sinameok-area btn-area">
+      <button class="sinameok-btn" id="sinameok-btn">
+        <div class="main-content">시나먹</div>
+        <span class="sub-content"><b>시</b>키고<br><b>나</b>누면<br><b>몬</b>먹을게 없다!</span>
+      </button>
+    </div>
+    <div class="sinamon-area btn-area">
+      <button class="sinamon-btn" id="sinamon-btn">
+        <div class="main-content">시나몬</div>
+        <span class="sub-content"><b>시</b>키고<br><b>나</b>누면<br><b>몬</b>살게 없다!</span>
+      </button>
+    </div>
+  </main>
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    $('.sinameok-btn').click(function(){
+      location.href = 'sinameok-board.html';
+    })
+    $('.sinamon-btn').click(function(){
+      location.href = 'sinamon-board.html';
+    })
+  </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>시나몬-시키고 나누면 몬살게 없다!</title>
+  <link rel="stylesheet" href="../style.css">
+</head>
+<body class="index-body">
+  <header>
+    <div class="title">
+      <h1>시나몬</h1>
+    </div>
+    <div class="sub-title-area">
+      <span class="sub-title"><b>시</b>키고<br><b>나</b>누면<br><b>몬</b>살게 없다!</span>
+    </div>  <!--b태그 빛나는 애니메이션 넣기-->
+  </header>
+  <main>
+    <div class="login-area">
+      <button class="kakao-login-btn">카카오로 로그인 / 회원가입</button>
+    </div>
+  </main>
+  <!--jQuery-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script>
+    var kakao_login_link = 'https://kauth.kakao.com/oauth/authorize?client_id=5a839021b9022410f2f0a040060fc1dc&redirect_uri=http://localhost:8080/api/members/kakaologin&response_type=code';
+    $('.kakao-login-btn').click(function(){   //카카오로 로그인 페이지로 이동
+      location.href = kakao_login_link;  
+    })
+  </script>
+</body>
+</html>

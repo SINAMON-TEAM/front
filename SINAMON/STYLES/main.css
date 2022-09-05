@@ -1,0 +1,77 @@
+/* 모바일 */
+@media (max-width:480px) {
+  .main-main{
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .btn-area{
+    width:  100vw;
+    text-align: center;
+  }
+  .btn-area > button{
+    width: 50vw;
+    height: 20vh;
+    border-radius: 10px;
+    background-color: var(--color-btn);
+    margin: 15px;
+  }
+}
+/* 모바일 외 기기 */
+@media (min-width:481px) {
+  .main-main{
+    align-items: center;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .btn-area{
+    width: 400px;
+    text-align: center;
+  }
+  .btn-area > button{
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+    background-color: var(--color-btn);
+  }
+}
+
+.main-body{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100vh;
+}
+
+.main-header{
+  background-color: dodgerblue;
+  width: 100vw;
+  flex-basis: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.logo-area{
+  background-color: yellow;
+  flex-basis: 100px;
+  align-items: center;
+  text-align: center;
+}
+
+.logo-area h1{
+  font-size: var(--logo-size);
+  font-weight: var(--logo-font-weight);
+}
+
+.my-page-btn-area{
+  background-color: blanchedalmond;
+  flex-grow: 1;
+  text-align: right;
+}
+
+
+

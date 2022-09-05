@@ -1,0 +1,48 @@
+/* 모바일 */
+@media (max-width:480px) {
+
+}
+/* 모바일 외 기기 */
+@media (min-width:481px) {
+  
+}
+
+.my-page-header{
+  display: flex;
+  flex-direction: row;
+
+}
+.main-btn-area{
+  flex-basis: 90vw;
+  height: 40px;
+  background-color: red;
+
+}
+.my-page-logo-area{
+  flex-grow: 1;
+  background-color: blueviolet;
+}
+
+.my-page-main{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.profile-area{
+  grid-area: 1 / 1 / 1 / span 2;
+  height: 200px;
+  background-color: aqua;
+}
+.my-post-list-area{
+  grid-area: 2 / 1 / 2 / 1;
+  height: 300px;
+  background-color: yellow;
+}
+.other-post-list-area{
+  grid-area: 2 / 2 / 2 / 2;
+  background-color: brown;
+}
+.chat-list-area{
+  grid-area: 3 / 1 / 3 / span 2;
+  height: 300px;
+  background-color: antiquewhite;
+}
